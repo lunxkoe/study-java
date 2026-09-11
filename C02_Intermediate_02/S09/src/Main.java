@@ -44,7 +44,7 @@ public class Main {
     - 1 (prev, 2) / 2 (1, 5) / 14(5, next) / 5(2, 14)
 
 ---
-## TreeSet
+## 자바 컬렉션 프레임워크 - TreeSet
 
 ### TreeSet
 - 구현: 이진 탐색 트리를 개선한 레드-블랙 트리를 내부에서 활용
