@@ -1,15 +1,16 @@
-package thread.test;
+package thread.start.test;
 
 import static util.MyLogger.log;
 
-public class StartTest1Main {
+public class StartTest2Main {
 
     public static void main(String[] args) {
-        Thread thread = new CounterThread();
+        CounterRunnable counterRunnable = new CounterRunnable();
+        Thread thread = new Thread(counterRunnable, "counter");
         thread.start();
     }
 
-    static class CounterThread extends Thread {
+    static class CounterRunnable implements Runnable {
 
         @Override
         public void run() {
